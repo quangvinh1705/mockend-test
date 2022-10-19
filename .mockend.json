@@ -7,14 +7,17 @@
         "username": { "string": ["Kevin", "Jeff"]},
         "userId": { "string": {}},
         "parentId": { "string": {}},
-        "createdAt": { "dateTime": {}},
+        "createdAt": { "dateTime": {
+            "min": "2022-01-01T00:00:00Z",
+            "max": "2022-12-31T23:59:59Z"      
+        }},
         "mentionedUsers": {
             "hasMany": "User"
         }
     },
     "User": {
         "userId": {
-            "int": {}
+            "int": { "min": 0, "max": 10 }
         },
         "name": {
             "string": {
