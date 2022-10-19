@@ -1,9 +1,9 @@
 {
     "Comment": {
         "body": {
-            "string": {}
+            "loremSentences":  { "minLength": 100, "maxLength": 200 }
         },
-        "id": { "string": {}},
+        "id": { "int": { "min": 0, "max": 100 }},
         "username": { "string": ["Kevin", "Jeff"]},
         "userId": { "string": {}},
         "parentId": { "string": {}},
