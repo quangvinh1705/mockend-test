@@ -1,0 +1,25 @@
+{
+    "Comment": {
+        "body": {
+            "string": {}
+        },
+        "id": { "string": {}},
+        "username": { "string": ["Kevin", "Jeff"]},
+        "userId": { "string": {}},
+        "parentId": { "string": {}},
+        "createdAt": { "dateTime": {}},
+        "mentionedUsers": {
+            "hasMany": "User"
+        }
+    },
+    "User": {
+        "userId": {
+            "int": {}
+        },
+        "name": {
+            "string": {
+
+            }
+        }
+    }
+}
